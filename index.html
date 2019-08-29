@@ -7,7 +7,6 @@
     <link rel="shortcut icon"  type="image/ico" href="img/mycon.ico">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
@@ -179,21 +178,6 @@
         Special Thanks to Zenva.
       </a>
     </footer>
-      <script type="text/javascript">
-        $(document).ready(function() {
-          $('a[href^="#"]').on('click', function(e) {
-            e.preventDefault();
 
-            var target = this.hash;
-            var $target = $(target);
-
-            $('html, body').stop().animate({
-              'scrollTop': $target.offset().top - 110
-            }, 900, 'swing', function() {
-              window.location.hash = target - 110;
-            });
-          });
-        });
-    </script>
   </body>
 </html>
