@@ -1,4 +1,21 @@
 var NSJam = NSJam || {}; //namespace
+
+$(document).ready(function(){
+  console.log('Hi');
+  $('.shortcut').on('click', function(e){
+   e.preventDefault();
+   //.hash read the href attribute
+   let t = this.hash;
+   console.log(t);
+   $('html').animate({
+     'scrollTop': $(t).offset().top - 110}
+     , 900
+     , 'swing'
+     , function(){
+       window.location.hash = t - 110;
+   });
+  });
+});
 /*GAME */
  window.addEventListener('load', function(){
    var GAME_WIDTH = 400;
@@ -38,8 +55,8 @@ var NSJam = NSJam || {}; //namespace
    var scream = new Audio("audio/scream.wav");
 
    var boxo = new player();
-   canvas.addEventListener("mousedown", boxoJump);
-   canvas.addEventListener("touchstart", boxoJump);
+   canvas.addEventListener("mouseup", boxoJump);
+   canvas.addEventListener("touchend", boxoJump);
    startbtn.addEventListener("mousedown", startGame);
    startbtn.addEventListener("touchstart", startGame);
    ctx.fillStyle = "green";
@@ -167,6 +184,7 @@ var NSJam = NSJam || {}; //namespace
    //load();
    step();
  });
+
  /*
  //Arrays
  var shoppingList = new Array();
