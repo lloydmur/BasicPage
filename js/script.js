@@ -56,10 +56,10 @@ $(document).ready(function(){
    var scream = new Audio("audio/scream.wav");
 
    var boxo = new player();
-   canvas.addEventListener("mouseup", boxoJump);
-   canvas.addEventListener("touchend", boxoJump);
-   startbtn.addEventListener("mousedown", startGame);
-   startbtn.addEventListener("touchstart", startGame);
+   canvas.addEventListener("mousedown", boxoJump);
+   canvas.addEventListener("touchstart", boxoJump);
+   startbtn.addEventListener("mouseup", startGame);
+   startbtn.addEventListener("touchend", startGame);
    ctx.fillStyle = "green";
    ctx.fillText("Floppy-Box", 125, 100);
 
