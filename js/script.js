@@ -4,12 +4,13 @@ $(document).ready(function(){
   console.log('Hi');
   $('.shortcut').on('click', function(e){
    e.preventDefault();
-   //.hash read the href attribute
+   //.hash reads the href attribute
    let t = this.hash;
    console.log(t);
    $('html').animate({
+     //.offset retrieves current posion of an element
      'scrollTop': $(t).offset().top - 110}
-     , 900
+     , 900 //time ms
      , 'swing'
      , function(){
        window.location.hash = t - 110;
