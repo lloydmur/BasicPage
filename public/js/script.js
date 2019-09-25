@@ -76,6 +76,7 @@ $(document).ready(function(){
    function startGame(){
      gameStart = !gameStart;
    }
+   /*
    function load(){
      sprites.player = new Image();
      sprites.player.src = 'images/hero.png';
@@ -86,6 +87,7 @@ $(document).ready(function(){
      sprites.g = new Image();
      sprites.g.src = 'images/chest.png';
    };
+   */
    function boxoJump(){
     boxo.speedY = -boxo.jumpSpeed;
    }

@@ -249,7 +249,7 @@ h1, h2. h3{
 */
 #about{
   padding: 10px 0;
-  background-color: beige;
+  background: linear-gradient(0deg, aqua, white, yellowgreen);
 }
 #about #twocol{
   display: flex;
@@ -291,7 +291,7 @@ h3.title{
 }
 
 /*
-------------------------PHOTO GALLERY------------------------
+------------------------Projects------------------------
 */
 #projects{
   background-color: lightseagreen;
@@ -300,7 +300,7 @@ h3.title{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #DDDDDD, seagreen);
+  background: linear-gradient(to bottom, aqua, seagreen);
 }
 #projects p{
   max-width: 800px;
@@ -373,6 +373,22 @@ hr.divider{
 .launcher-text p a:hover{
   color: violet;
 }
+/*------------------------Skills=====================*/
+#skills{
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, seagreen, white);
+}
+#skills h3{
+  color: silver;
+  text-shadow: black 2px 2px;
+  font-size: 36px;
+
+}
+
 /*Game section*/
 #game{
   height: 50%;
