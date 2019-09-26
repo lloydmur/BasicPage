@@ -52,8 +52,8 @@ $(document).ready(function(){
    var gameOver = false;
    var sprites = {};
    var score = 0;
-   var score_sfx = new Audio("audio/score.wav");
-   var scream = new Audio("audio/scream.wav");
+   var score_sfx = new Audio("public/audio/score.wav");
+   var scream = new Audio("public/audio/scream.wav");
 
    var boxo = new player();
    canvas.addEventListener("mousedown", boxoJump);

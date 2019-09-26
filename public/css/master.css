@@ -205,7 +205,7 @@ footer #pgbtns{
   justify-content: center;
 
 /*BG image seen at top of page*/
-  background-image: url('img/hero.jpg');
+  background-image: url('../images/hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -315,6 +315,7 @@ h3.title{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   padding: 10px;
 }
 section.launcher-image{
@@ -330,13 +331,11 @@ section.launcher-image{
   max-height: 600px;
 }
 section.launcher-text{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   padding-bottom: 0;
-  background-color: #FFFFFFFF;
+  background-color: aliceblue;
   border-radius: 10px;
   color: black;
+  max-height: 300px;
 }
 .launcher-text h4{
   background-color: darkgray;
@@ -373,6 +372,13 @@ hr.divider{
 .launcher-text p a:hover{
   color: violet;
 }
+#game{
+  align-items: center;
+}
+.game-text{
+  vertical-align: middle;
+  max-height: 150px;
+}
 /*------------------------Skills=====================*/
 #skills{
   padding: 50px 0px;
@@ -388,8 +394,78 @@ hr.divider{
   font-size: 36px;
 
 }
+#tabs{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+#tabs ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tab{
+  background: azure;
+  color: lightblue;
+  text-shadow: black 1px 1px;
+  padding: 12px;
 
-/*Game section*/
+  margin: 0px 4px;
+  border-radius: 8px;
+  border: solid black 2px;
+}
+.tab-content{
+  background: linear-gradient(90deg, lightcyan, white, lightseagreen);
+  color: darkcyan;
+  padding: 8px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  border: outset steelblue 8px;
+
+  width: 90%;
+}
+.tab-content h2{
+  color: silver;
+  text-shadow: black 1px 1px;
+  text-decoration: underline;
+}
+.tab-content .skill-list{
+  text-align: center;
+  border-right: dotted darkcyan;
+  width: 50%;
+}
+
+.tab-content .skill-detail{
+  width: 50%;
+  color: black;
+  text-align: center;
+}
+.skill-detail p{
+  padding: 8px;
+}
+.tab-content ul{
+  width: 50%
+  padding: 8px;
+  border-radius: 12px;
+}
+#P{
+  visibility: visible;
+}
+#SE{
+  visibility: collapse;
+}
+#ISD{
+  visibility: collapse;
+}
+#WD{
+  visibility: collapse;
+}
+#O{
+  visibility: collapse;
+}
+/*======================================================Game section======*/
 #game{
   height: 50%;
   padding: 50px 0;

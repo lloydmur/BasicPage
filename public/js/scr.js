@@ -1,3 +1,2 @@
-var fr = new FileReader();
-
-fr.readAsText('highscores.txt');
+var utc = new Date().toString().slice(0,10);
+console.log(utc);
