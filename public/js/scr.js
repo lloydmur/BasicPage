@@ -1,9 +1,16 @@
-var utc = new Date().toString();
-console.log(utc);
+console.log(new Date().toString());
 
-var tick = 1;
+var tick = true;
+var clock = document.getElementById('clock');
+clock.innerHTML = new Date().toString().slice(15,21);
+
 setInterval(function(){
-  if(tick)
-  var time = new Date().toString().slice(15,24);
-  console.log(time);
+  tick = !tick;
+  var time = new Date().toString().slice(15,21);
+  if(tick){
+    var t = time.replace(/:/g, " ");
+    time = t;
+  }
+
+  clock.innerHTML = time;
 },1000)
