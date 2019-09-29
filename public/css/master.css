@@ -592,134 +592,12 @@ section.game-text{
   #tabs ul{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+      justify-content: center;
+  }
 }
 
-/*
--------------------travel---------------------
-*/
-#getting-around{
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  background-color: darkgrey;
-  padding: 20px 0;
-}
-#getting-around ul.grid{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 60px;
-}
-#getting-around ul.grid li{
-  flex-basis: 25%;
-  padding: 0 20px;
-  margin-bottom: 40px;
-}
-#getting-around p {
-  margin-bottom: 20px;
-}
-.ico{
-  font-size: 40px;
-  color: darkslategray;
-  margin-bottom: 20px;
-}
-#gettingg-around ul.grid li h4{
-  color: #555;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-#gettingg-around ul.grid li p{
-  text-align: left;
-  margin: 0;
-}
-@media screen and (max-width: 800px){
-  #getting-around{
-    margin: 0 0px;
-  }
-  #getting-around ul.grid li{
-    flex-basis: 70%;
-    margin-bottom: 65px;
-  }
-}
-/*--------------FAMOUS QUOTES----------------*/
-#famous-quotes{
-  background-color: beige;
-  padding: 20px;
-  text-align: center;
-}
-#famous-quotes .portrait-photos{
-  border-radius:  50%;
-  border: 4px solid dimgray;
-  margin: 10px;
-}
-/*First Child element of parent container
-in this case Parent is fampus QUOTES
-1st child is
-*/
-#famous-quotes .portrait-photos:first-child{
-  margin-top: 20px;
-}
-#famous-quotes .quote{
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  padding: 0;
-}
-#famous-quotes .author{
-  margin: 20px;
-}
-#famous-quotes .author:last-child{
-  margin: 0;
-}
-@media screen and (max-width: 800px){
-  #famous-quotes .quote{
-    font-size: 18px;
-    padding: 0 20px;
-  }
-  #famous-quotes .author{
-    font-size: 14px;
-  }
-}
-/*------------------CONTACT------------------*/
-#contact{
-  padding: 20px;
-  background-color: cornflowerblue;
-}
+/*=====================Game===================*/
 
-#contact .congrid{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#contact .title{
-  margin-bottom: 20px;
-}
-section.fsect{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-}
-section.fsect p{
-  max-width: 900px;
-  text-align: center;
-  margin-bottom: 35px;
-  padding: 0 20px;
-  line-height: 1.5;
-}
-@media screen and (max-width:800px){
-  .gform{
-    height: 1250px;
-  }
-}
-/*Game*/
 .floppy-box{
   padding: 0px;
   background: linear-gradient(90deg ,aquamarine, lawngreen);
@@ -776,5 +654,42 @@ canvas{
     border: 3px solid limegreen;
     margin: 0px auto 10px;;
     width: 100%;
+  }
+}
+
+
+/*------------------CONTACT------------------*/
+#contact{
+  padding: 20px;
+  background-color: cornflowerblue;
+}
+
+#contact .congrid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact .title{
+  margin-bottom: 20px;
+}
+section.fsect{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+section.fsect p{
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+@media screen and (max-width:800px){
+  .gform{
+    height: 1250px;
   }
 }

@@ -57,10 +57,7 @@ $(document).ready(function(){
 
    var boxo = new player();
    canvas.addEventListener("mousedown", boxoJump);
-   canvas.addEventListener("touchstart", boxoJump);
    startbtn.addEventListener("mouseup", startGame);
-   startbtn.addEventListener("touchstart", startGame);
-   startbtn.addEventListener("touchend", startGame);
    ctx.fillStyle = "green";
    ctx.fillText("Floppy-Box", 125, 100);
 
