@@ -519,7 +519,7 @@ section.game-text{
   text-shadow: black 1px 1px;
   text-align: center;
 
-  padding: 6px;
+  padding: 8px;
   margin: 0px 4px;
 
   border-radius: 8px;
@@ -529,6 +529,7 @@ section.game-text{
   background: azure;
   color: darkcyan;
 }
+
 
 .tab-content{
   background: linear-gradient(90deg, lightcyan, white, lightseagreen);
@@ -582,7 +583,17 @@ section.game-text{
 #O{
   visibility: collapse;
 }
-
+@media screen and (max-width: 500px){
+  #tabs{
+    width: 80%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  #tabs ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /*
 -------------------travel---------------------
