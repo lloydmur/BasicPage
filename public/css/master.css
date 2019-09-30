@@ -504,21 +504,21 @@ section.game-text{
   font-size: 36px;
 
 }
-#tabs{
+#tab-list{
   user-select: none;
   padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-#tabs ul{
+  margin-bottom: 12px;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.tab{
+#tabs ul li.tab{
   background: dimgray;
   color: darkgrey;
   text-shadow: black 1px 1px;
   text-align: center;
+  max-height: 80%;
 
   padding: 8px;
   margin: 0px 4px;
@@ -526,7 +526,8 @@ section.game-text{
   border-radius: 8px;
   border: solid black 2px;
 }
-.active-tab{
+#tabs ul li.active-tab{
+  height: 100%;
   background: azure;
   color: darkcyan;
 }
@@ -615,7 +616,7 @@ section.game-text{
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
-  #tabs ul{
+  #tab-list{
     display: flex;
     flex-direction: column;
       justify-content: center;
