@@ -1,7 +1,6 @@
 var NSJam = NSJam || {}; //namespace
 
 $(document).ready(function(){
-  console.log('Hi');
   $('.shortcut').on('click', function(e){
    e.preventDefault();
    //.hash reads the href attribute
@@ -11,7 +10,7 @@ $(document).ready(function(){
      //.offset retrieves current posion of an element
      'scrollTop': $(t).offset().top - 110}
      , 900 //time ms
-     , 'swing'
+     , 'swing' //easing transition
      , function(){
        window.location.hash = t - 110;
    });
@@ -56,8 +55,8 @@ $(document).ready(function(){
    var scream = new Audio("public/audio/scream.wav");
 
    var boxo = new player();
-   canvas.addEventListener("mousedown", boxoJump);
-   startbtn.addEventListener("mouseup", startGame);
+   canvas.addEventListener("click", boxoJump);
+   startbtn.addEventListener("click", startGame);
    ctx.fillStyle = "green";
    ctx.fillText("Floppy-Box", 125, 100);
 

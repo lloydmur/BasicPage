@@ -23,6 +23,7 @@ header{
   z-index: 10;
   top: 0;
   left: 0;
+  max-height: 20%;
   width: 100%;
   color: azure;
   padding: 35px 100px 20px;
@@ -126,7 +127,6 @@ footer{
   align-items: center;
 }
 .c-info .title{
-  text-decoration: overline underline;
   font-weight: bold;
   font-size: 24px;
   color: darkgoldenrod;
@@ -505,6 +505,7 @@ section.game-text{
 
 }
 #tabs{
+  user-select: none;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
@@ -549,18 +550,43 @@ section.game-text{
   text-shadow: black 1px 1px;
   text-decoration: underline;
 }
+.tab-content li{
+  margin: 4px;
+}
 .tab-content .skill-list{
   text-align: center;
   border-right: dotted darkcyan;
   width: 50%;
 }
-
-.tab-content .skill-detail{
-  width: 50%;
+.skill-list ul h4{
+  font-size: 1.2em;
+  text-decoration: underline;
   color: black;
+  margin-bottom: 0px;;
+}
+.multi-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: baseline;
+}
+.multi-list ul{
+  margin: 12px 12px;
+}
+.multi-list ul li{
+  margin: 4px 0px;
+}
+.skill-detail h2{
   text-align: center;
 }
+.tab-content .skill-detail{
+  width: 75%;
+  color: black;
+
+}
 .skill-detail p{
+  text-indent: 8px;
   padding: 8px;
 }
 .tab-content ul{
@@ -593,6 +619,25 @@ section.game-text{
     display: flex;
     flex-direction: column;
       justify-content: center;
+  }
+  .tab-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tab-content .skill-list{
+    width: 100%;
+    border-right: none;
+    border-bottom: dotted darkcyan;
+    margin-bottom: 12px;
+  }
+
+  .tab-content .skill-detail{
+    width: 100%;
+    text-indent: 8px;
+  }
+  .tab-content li{
+    margin: 8px 0px;
   }
 }
 

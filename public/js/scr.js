@@ -34,7 +34,7 @@ function getTime(){
 function setupTabs(){
   let tabs = document.getElementsByClassName('tab');
   for(var i = 0; tabs[i] != null; i++){
-    tabs[i].addEventListener('mousedown', setActiveTab);
+    tabs[i].addEventListener('click', setActiveTab);
     }
 }
 
