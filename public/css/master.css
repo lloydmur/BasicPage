@@ -4,6 +4,7 @@
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
+  margin-bottom: 0px;
   padding: 0px;
   /*subtractive padding and border arther than additive*/
   box-sizing: border-box;
@@ -12,10 +13,20 @@ html{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: #555;
+  max-height: 100%;
+  padding-bottom: 20px;
+  border: 1px solid transparent;
+
   /*scroll-behavior: smooth;*/
 }
 body{
   background-color: rgba(0, 0, 0, 0.7);
+  margin: 0px;
+
+}
+html, body{
+  margin: 0;
+
 }
 header{
   background-color: rgba(0, 0, 0, 0.7);
@@ -118,13 +129,17 @@ footer{
   color: white;
   text-align: center;
   /*Creates a nice color pade effect (style, 1st color, 2nd color)*/
-  background: linear-gradient(to bottom, rgb(100, 100, 0), black);
+  background: linear-gradient(180deg, lawngreen, gray);
   padding: 20px 0;
+  margin: 0px;
   /*Flexible box will cause text to roll automatically*/
   display: flex;
+
   /**/
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  border-top: none;
 }
 .c-info .title{
   font-weight: bold;
@@ -178,30 +193,6 @@ footer a.zbtn:hover{
 footer ul li a:hover{
   color: black;
 }
-footer #pgbtns{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px;
-}
-#pgbtns a.pgbtn{
-  text-decoration: none;
-  text-align: center;
-  padding: 0 20px;
-  margin: 0 20px;
-  border-radius: 4px;
-  font-size: 12px;
-  width: auto;
-  height: 100%;
-  background-color: darkolivegreen;
-  color:lightgreen;
-  transition: color 0.5s;
-  transition: background-color 0.5s;
-}
-#pgbtns a.pgbtn:hover{
-  color: black;
-  background-color: lightgreen;
-}
 
 @media screen and (max-width: 800px){
     footer{
@@ -215,7 +206,7 @@ footer #pgbtns{
 ------------------HERO-----------------------
 */
 #hero{
-  background: grey;
+  background: white;
   color: white;
   text-align: center;
 
@@ -394,7 +385,7 @@ hr.divider{
 }
 
 
-/*======================================================Game section======*/
+/*======================================================snec snacc======*/
 #game{
   height: 50%;
   padding: 50px 0;
@@ -491,12 +482,12 @@ section.game-text{
 }
 /*------------------------Skills=====================*/
 #skills{
-  padding: 50px 0px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, seagreen, white);
+  background: linear-gradient(180deg, seagreen, aquamarine);
 }
 #skills h3{
   color: silver;
@@ -507,12 +498,13 @@ section.game-text{
 #tab-list{
   user-select: none;
   padding-bottom: 0px;
-  margin-bottom: 12px;
+  margin: 12px 0px;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
 #tabs ul li.tab{
   background: dimgray;
   color: darkgrey;
@@ -531,20 +523,28 @@ section.game-text{
   background: azure;
   color: darkcyan;
 }
-
+.tcc{
+  align-items: center;
+  width: 90%;
+}
 
 .tab-content{
   background: linear-gradient(90deg, lightcyan, white, lightseagreen);
   color: darkcyan;
   padding: 8px;
+  height: auto;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
 
   border: outset steelblue 8px;
-
-  width: 90%;
+  display: none;
+  width: 0%;
+}
+.tab-content.active{
+  display: flex;
+  width: 100%;
 }
 .tab-content h2{
   color: silver;
@@ -595,22 +595,12 @@ section.game-text{
   padding: 8px;
   border-radius: 12px;
 }
-#P{
-  visibility: visible;
-}
-#SE{
-  visibility: collapse;
-}
-#ISD{
-  visibility: collapse;
-}
-#WD{
-  visibility: collapse;
-}
-#O{
-  visibility: collapse;
-}
+
+
 @media screen and (max-width: 500px){
+  #skills{
+    height: auto;
+  }
   #tabs{
     width: 80%;
     padding-bottom: 0px;
@@ -646,7 +636,7 @@ section.game-text{
 
 .floppy-box{
   padding: 0px;
-  background: linear-gradient(90deg ,aquamarine, lawngreen);
+  background: linear-gradient(180deg ,aquamarine, lawngreen);
   text-align: center;
   color: black;
 }

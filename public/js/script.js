@@ -16,6 +16,7 @@ $(document).ready(function(){
    });
   });
 });
+
 /*GAME */
  window.addEventListener('load', function(){
    var GAME_WIDTH = 400;

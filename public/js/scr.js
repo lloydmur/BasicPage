@@ -43,10 +43,10 @@ function setActiveTab(e){
   let tab = e.target;
 
   l.classList.remove('active-tab');
-  document.getElementById(l.classList[1]).style.visibility = 'collapse';
+  document.getElementById(l.classList[1]).classList.remove('active');
 
   tab.classList.add('active-tab');
-  document.getElementById(tab.classList[1]).style.visibility = 'visible';
+  document.getElementById(tab.classList[1]).classList.add('active');
 }
 
 function findActiveTab(){
