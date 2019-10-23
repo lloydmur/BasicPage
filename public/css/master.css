@@ -129,7 +129,7 @@ footer{
   color: white;
   text-align: center;
   /*Creates a nice color pade effect (style, 1st color, 2nd color)*/
-  background: linear-gradient(180deg, lawngreen, gray);
+  background: linear-gradient(180deg, lawngreen, black);
   padding: 20px 0;
   margin: 0px;
   /*Flexible box will cause text to roll automatically*/
@@ -138,8 +138,7 @@ footer{
   /**/
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
-  border-top: none;
+  padding: 12px;
 }
 .c-info .title{
   font-weight: bold;
@@ -525,7 +524,7 @@ section.game-text{
 }
 .tcc{
   align-items: center;
-  width: 90%;
+  width: 75%;
 }
 
 .tab-content{
@@ -598,6 +597,9 @@ section.game-text{
 
 
 @media screen and (max-width: 500px){
+  .tcc{
+    width: 90%;
+  }
   #skills{
     height: auto;
   }
@@ -635,7 +637,7 @@ section.game-text{
 /*=====================Game===================*/
 
 .floppy-box{
-  padding: 0px;
+  padding: 12px;
   background: linear-gradient(180deg ,aquamarine, lawngreen);
   text-align: center;
   color: black;
